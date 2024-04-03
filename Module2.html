@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(199, 57, 57, 0.823);
+        }
+        #p11{
+            font-size: 40px;
+            color: aliceblue;
+           text-align: center;
+           margin-top: 20%;
+        }
+        #p12{
+            font-size: 35px;
+            color: aliceblue;
+           text-align: center;
+          
+
+        }
+
+
+    </style>
+</head>
+<body >
+    <p id="p12">Your Today's Favourite quote is</p><br>
+    <p id="p11"></p>
+    
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var savedItem = localStorage.getItem('savedItem'); // Retrieve the saved item
+
+        if (savedItem) {
+            var savedItemContainer = document.getElementById('p11');
+            savedItemContainer.textContent = savedItem; // Display the saved item
+        }
+    });
+</script>
+</html>

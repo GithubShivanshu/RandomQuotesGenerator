@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome Quotes Generator</title>
+    <link rel="stylesheet" href="Quotes.css">
+</head>
+     
+<body id="body">
+        <p id="p100">Welcome</p>
+        <span><p id="p101" >Name will present here</p></span>
+    
+    <div class="container" id="Main">
+        <p class="time" id="timer" >Lets Start Our Night with new Quote</p>
+        <div class="main">
+
+        <quote id="quotes">Quotes will be displayed here  </quote><br><br>
+            <button class="btn" id="quote-btn" onclick="generate()" cursor="pointer">New Quote</button>
+            
+            <span>
+                
+                <img id="img1" src="star.png" onclick="fav()">
+            </span>
+        </div>
+        <div class="dropdown" >
+            <button class="dropbtn"id="quote-btn2">Share</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="share1()" id="m1">Twitter</a>
+              <a href="#" id="m2" onclick="share2()">Whatsapp</a>
+              <a href="#" id="m3" onclick="share3()">Facebook</a>
+            </div>
+          </div>
+
+        
+        <!-- <button class="btn" id="quote-btn2" onclick="share()" cursor="pointer">Share</button> -->
+        <span>
+            <button class="btn" id="quote-btn3" onclick="fav1()" cursor="pointer">Favourites</button>
+        </span>
+        
+        <span>
+              
+        </span>
+     </div>
+     <script src="Quotes.js"></script>
+</body>
+</html>

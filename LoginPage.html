@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Randome Quote Generator</title>
+    <style>
+        body {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-image: url('2.jpg');
+            /* Replace 'your-image-path.jpg' with the actual path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #marq {
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            font-size: 50px;
+        }
+
+        .d1 {
+            border-radius: 10px;
+            background-color: rgba(34, 0, 255, 0.103);
+
+        }
+
+        #t1 {
+            margin-top: 50px;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+
+        }
+
+        #te2 {
+            margin-top: 50px;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+
+        }
+
+        #b1 {
+            font-size: 25px;
+            border-radius: 4px;
+            padding: 7px 25px;
+            color: rgb(221, 217, 217);
+            background-color: rgba(0, 0, 0, 0.232);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="marq">
+        <marquee ID="marq1">WELCOME TO RANDOME QUOTE GENERATOR KINDLY LOGIN</marquee>
+    </div>
+    <br><br><br><br>
+
+    <div class="d1">
+        <input type="text" id="t1" placeholder="Enter Name" required><br>
+        <input type="email" id="te2" placeholder="Enter email" required><br><br><br>
+        <button id="b1">Login</button>
+    </div>
+</body>
+<script>
+    $('#b1').click(function () {
+        var i = $('#t1').val();
+        var i2 = $('#te2').val();
+
+        if (i != "" & i != "") {
+            localStorage.setItem('savedItem1', i); // Store the item
+            window.location.href = 'Quotes.html'; s
+        }
+        else {
+            alert("Need to fill the name and email");
+        }
+
+
+
+
+
+
+    });
+</script>
+
+</html>
